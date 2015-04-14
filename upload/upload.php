@@ -1,20 +1,25 @@
 <?php 
-include './upload.class.php';
+include './uploadAll.class.php';
 
-$upload = new Upload();
+$upload = new UplocadAll();
 
 $upload->exts = array('jpg','png','jpeg','gif');
 $upload->savePath = './images/';
+$upload->maxSize = 1024000;
+$upload->exts = array('jpg');
 
-$info = $upload->upload();
-
-if (!$info) {
-	$upload->getError();
+if ($upload->upload()) {
+	p($upload->getUploadInfo());
 }else{
-	print_r($info);
-	echo '上传成功！';
+	echo $upload->getError();
 }
 
+
+function p ($data = array()) {
+	echo "<pre>";
+	print_r($data);
+	echo "<pre>";
+}
 
  ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -26,7 +31,7 @@ if (!$info) {
 <body>
 	<form action="" method="post" enctype="multipart/form-data">
 		<input type="file" name="file[]" /><br />
-		<input type="file" name="file[]" />
+		<input type="file" name="file[]" /><br />
 		<input type="submit" value="提交" />
 	</form>
 </body>
