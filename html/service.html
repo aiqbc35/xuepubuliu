@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title>系统设置</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+    <!--ios7-->
+    <link rel="stylesheet" type="text/css" href="js/ios-switch/switchery.css" />
+
+    <!--icheck-->
+    <link href="js/iCheck/skins/minimal/minimal.css" rel="stylesheet">
+    <link href="js/iCheck/skins/minimal/red.css" rel="stylesheet">
+    <link href="js/iCheck/skins/minimal/green.css" rel="stylesheet">
+    <link href="js/iCheck/skins/minimal/blue.css" rel="stylesheet">
+    <link href="js/iCheck/skins/minimal/yellow.css" rel="stylesheet">
+    <link href="js/iCheck/skins/minimal/purple.css" rel="stylesheet">
+
+    <link href="js/iCheck/skins/square/square.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/red.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/green.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/blue.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/yellow.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/purple.css" rel="stylesheet">
+
+    <link href="js/iCheck/skins/flat/grey.css" rel="stylesheet">
+    <link href="js/iCheck/skins/flat/red.css" rel="stylesheet">
+    <link href="js/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="js/iCheck/skins/flat/blue.css" rel="stylesheet">
+    <link href="js/iCheck/skins/flat/yellow.css" rel="stylesheet">
+    <link href="js/iCheck/skins/flat/purple.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="sticky-header">
+<section>
+    <div class="left-side sticky-left-side">
+        <div class="logo">
+            <a href="/index.html" title="home"><img src="images/logo.png" alt="logo" > </a>
+        </div>
+        <div class="logo-icon text-center">
+            <a href="index.html" title="home"><img src="images/logo_icon.png" alt="logo" > </a>
+        </div>
+
+        <div class="left-side-inner">
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li ><a href="index.html"><i class="fa fa-home"></i> <span>后台首页</span></a></li>
+                <li class="active"><a href="service.html"><i class="fa fa-laptop"></i> <span>系统设置</span></a></li>
+                <li class="menu-list"><a href=""><i class="fa fa-user"></i><span>用户管理</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="userList.html">用户列表</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href=""><i class="fa fa-rss-square"></i><span>新闻管理</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="newsList.html">新闻列表</a></li>
+                        <li><a href="addNews.html">发布新闻</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html"><i class="fa fa-sign-in"></i> <span>Login Page</span></a></li>
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="main-content" >
+
+        <div class="header-section">
+            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+            <div class="menu-right">
+                <ul class="notification-menu">
+                    <li>
+                        <a class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown">
+                            <img src="images/photos/user-avatar.png" alt="username">username
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="#"><i class="fa fa-cog"></i>个人设置</a> </li>
+                            <li><a href="#"><i class="fa fa-sign-out"></i>登出</a> </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-heading">
+            <h3>系统设置</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="panel">
+                    <div class="panel-body">
+                        <form class="adminex-form form-horizontal" method="post">
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">网站名称</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-5"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">网站关键字</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block">网站SEO关键字设置，请控制在150字以内，多关键字请以“,”分开</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">网站注解</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block">网站SEO注解设置，请控制在255字以内</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">网站域名</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-5"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">网站状态</label>
+                                <div class="col-sm-10">
+                                    <input type="checkbox" class="js-switch-red" checked/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-primary">保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!--footer section start-->
+        <footer>
+            2014 &copy; AdminEx by ThemeBucket
+        </footer>
+        <!--footer section end-->
+
+    </div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+<!--ios7-->
+<script src="js/ios-switch/switchery.js" ></script>
+<script src="js/ios-switch/ios-init.js" ></script>
+
+<!--icheck -->
+<script src="js/iCheck/jquery.icheck.js"></script>
+<script src="js/icheck-init.js"></script>
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
